@@ -166,9 +166,9 @@
 	}
 	
 	.hero-title {
-		font-size:9vw;
+		font-size:4vw;
 		line-height:11vw;
-		font-weight:500;
+		font-weight:400;
 		font-family: 'basis_grotesque_promedium', sans-serif;
 		position: relative;
 		display:block;
@@ -1348,5 +1348,10 @@
     transform: scale(2) translateY(5%);
     transform-origin: center;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 	
