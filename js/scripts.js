@@ -361,6 +361,23 @@ Page Load Actions
 				$("#project-nav .next-hero-title").removeClass('hover-title');
 			});
 		}
+
+		if (!$("body").hasClass("disable-ajaxload")) {
+			$('#page-nav .page-title').on('click', function(event) {
+			   // Check if it's an internal anchor link
+			   if ($(this).attr('href').startsWith("#")) {
+				  // Let the default behavior (smooth scroll) handle it
+				  return true;;
+			   }
+		 
+			   $("body").addClass("show-loader");
+			   $('header').removeClass('white-header');
+			   $("#app").remove();
+			   $(".big-title-caption").remove();
+			   // Remaining AJAX loading behavior
+			});
+		 }
+		 
 		
 		if (!$("body").hasClass("disable-ajaxload")) {
 			
@@ -2033,4 +2050,3 @@ Function Portfolio
 var LoadViaAjax = window.LoadViaAjax;	
 	
 
-	
