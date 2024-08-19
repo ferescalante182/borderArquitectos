@@ -123,13 +123,18 @@
                          
                         </li>
                         <li class="link menu-timeline">
-                          <a class="" href="#projects">
+                          <a class="" href="#projects" (click)="someFunc($event)">
                               <div class="before-span">
-                                  <span data-hover="Projectos">Proyectos</span>
+                                  <span data-hover="Proyectos">Proyectos</span>
                               </div>
                           </a>
                        </li>
-                       
+                       <script>
+                        someFunc(event) {
+    event.preventDefault();
+    // rest of your code here
+}
+                       </script>
                       
                         <li class="link menu-timeline">
                           <a
