@@ -166,7 +166,7 @@
 	}
 	
 	.hero-title {
-		font-size:4vw;
+		font-size:1vw;
 		line-height:11vw;
 		font-weight:400;
 		font-family: 'basis_grotesque_promedium', sans-serif;
@@ -1315,7 +1315,7 @@
 	
 	.hero-title {
 	  font-size: 14vw;
-	  line-height: 16vw;
+	  line-height: 1vw;
 	}
 	
 	.uppercase-text .hero-title {
@@ -1358,5 +1358,27 @@ html {
 }
 
 
-
-	
+.hero-footer-right {
+	position: absolute;
+	right: 20px; /* Adjust the position to the right */
+	top: -60%; /* Adjust this value to make the icons appear higher */
+	transform: translateY(-40%); /* Center the icons vertically based on the adjusted top value */
+  }
+  
+  .social-media-icons {
+	display: flex;
+	flex-direction: column; /* Stack the icons vertically */
+	gap: 10px; /* Space between the icons */
+  }
+  
+  .social-icon {
+	font-size: 24px; /* Adjust icon size */
+	color: #000; /* Adjust icon color */
+	text-decoration: none;
+  }
+  
+  .social-icon:hover {
+	color: #0077ff; /* Change color on hover */
+  }
+  
+  
