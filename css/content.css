@@ -1356,29 +1356,39 @@ html {
 html {
     scroll-behavior: smooth;
 }
-
-
 .hero-footer-right { 
 	position: absolute;
 	right: 20px; /* Adjust the position to the right */
 	top: -60%; /* Adjust this value to make the icons appear higher */
 	transform: translateY(-40%); /* Center the icons vertically based on the adjusted top value */
-  }
-  
-  .social-media-icons {
+}
+
+.social-media-icons {
 	display: flex;
 	flex-direction: column; /* Stack the icons vertically */
 	gap: 10px; /* Space between the icons */
-  }
-  
-  .social-icon {
+}
+
+.social-icon {
 	font-size: 24px; /* Adjust icon size */
 	color: #000; /* Adjust icon color */
 	text-decoration: none;
-  }
-  
-  .social-icon:hover {
+}
+
+.social-icon:hover {
 	color: #0077ff; /* Change color on hover */
-  }
-  
-  
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+	.hero-footer-right {
+		right: 20px; /* Keep them aligned to the right */
+		top: 10%; /* Adjust top position for mobile layout */
+		transform: translateY(0); /* Ensure the icons stay positioned properly on mobile */
+	}
+	
+	.social-media-icons {
+		flex-direction: row; /* Make the icons horizontal */
+		gap: 15px; /* Increase the gap between icons if needed */
+	}
+}
