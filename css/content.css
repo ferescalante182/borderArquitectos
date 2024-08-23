@@ -1360,7 +1360,7 @@ html {
 
 .hero-footer-right { 
 	position: absolute;
-	right: 21px; /* Adjust the position to the right */
+	right: 20px; /* Adjust the position to the right */
 	top: -60%; /* Adjust this value to make the icons appear higher */
 	transform: translateY(-40%); /* Center the icons vertically based on the adjusted top value */
   }
