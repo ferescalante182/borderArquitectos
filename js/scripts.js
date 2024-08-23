@@ -364,19 +364,36 @@ Page Load Actions
 
 		if (!$("body").hasClass("disable-ajaxload")) {
 			$('#page-nav .page-title').on('click', function(event) {
-			   // Check if it's an internal anchor link
-			   if ($(this).attr('href').startsWith("#")) {
-				  // Let the default behavior (smooth scroll) handle it
-				  return true;;
-			   }
-		 
-			   $("body").addClass("show-loader");
-			   $('header').removeClass('white-header');
-			   $("#app").remove();
-			   $(".big-title-caption").remove();
-			   // Remaining AJAX loading behavior
+				// Check if it's an internal anchor link
+				var href = $(this).attr('href');
+				console.log("Clicked link: " + href); // Debugging: Log the clicked link
+		
+				if (href.startsWith("#")) {
+					// Prevent default behavior and enable smooth scrolling to the anchor
+					event.preventDefault();
+					console.log("Internal anchor detected, preventing page reload.");
+					var target = $(href);
+		
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 1000); // Adjust speed if necessary
+					} else {
+						console.log("Target element not found: " + href); // Debugging: Log if target is not found
+					}
+					return;
+				}
+		
+				// If it's not an internal anchor, continue with AJAX load behavior
+				console.log("Non-anchor link detected, proceeding with AJAX load.");
+				$("body").addClass("show-loader");
+				$('header').removeClass('white-header');
+				$("#app").remove();
+				$(".big-title-caption").remove();
+				// Remaining AJAX loading behavior
 			});
-		 }
+		}
+		
 		 
 		
 		if (!$("body").hasClass("disable-ajaxload")) {
