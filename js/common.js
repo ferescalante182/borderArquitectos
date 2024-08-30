@@ -180,20 +180,46 @@ Function Scroll Effects
 			}
 
 			// Initialise
-			var scrollbar = Scrollbar.init(ScrollArea, ScrollbarOptions);			
-			
-			
-			ScrollTrigger.scrollerProxy("#content-scroll", {
-			  scrollTop(value) {
-				if (arguments.length) {				  
-				  scrollbar.scrollTop = value;
-				}
-				return scrollbar.scrollTop;
-			  }
-			});			
-			scrollbar.addListener(ScrollTrigger.update);			
-			ScrollTrigger.defaults({ scroller: ScrollArea, ScrollbarOptions });
-			
+// Initialize custom scrollbar
+var scrollbar = Scrollbar.init(ScrollArea, ScrollbarOptions);
+
+// Integrate with GSAP ScrollTrigger
+ScrollTrigger.scrollerProxy("#content-scroll", {
+  scrollTop(value) {
+    if (arguments.length) {
+      scrollbar.scrollTop = value;  // Set scroll position if value is provided
+    }
+    return scrollbar.scrollTop;  // Return current scroll position
+  },
+  getBoundingClientRect() {
+    return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+  },
+  pinType: document.querySelector("#content-scroll").style.transform ? "transform" : "fixed"
+});
+
+// Synchronize GSAP with Scrollbar updates
+scrollbar.addListener(ScrollTrigger.update);
+ScrollTrigger.defaults({ scroller: ScrollArea, ScrollbarOptions });
+
+// Handle anchor links manually with smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const offsetTop = targetElement.getBoundingClientRect().top + scrollbar.scrollTop;
+
+      gsap.to(scrollbar, {
+        duration: 1.5,
+        scrollTo: { y: offsetTop, autoKill: true },
+        ease: "Power4.easeInOut"
+      });
+    }
+  });
+});
+
 		}// End Smooth Scroll
 		
 		
