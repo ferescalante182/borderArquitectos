@@ -2466,7 +2466,7 @@ input[type="submit"] {
 }
 
 /*--------------------------------------------------
-	Team Panels
+    Team Panels
 ---------------------------------------------------*/
 
 #team-panels .panel-content-wrapper {
@@ -2549,7 +2549,75 @@ input[type="submit"] {
 #team-panels .panels-container .panel img {
   height: 100%;
   margin: 0;
+  object-fit: cover;
 }
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  #team-panels .panel-content-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: auto;
+  }
+
+  #team-panels .panels-container .panel:first-child .panel-content-wrapper {
+    padding-left: 30px;
+  }
+
+  #team-panels .panels-container .panel:last-child .panel-content-wrapper {
+    padding-right: 30px;
+  }
+
+  #team-panels .panel-content {
+    position: static;
+    padding: 10px 15px;
+    bottom: 0;
+  }
+
+  .team-name-panel,
+  .team-cat-panel {
+    font-size: 16px;
+    line-height: 22px;
+    float: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .team-cat-panel {
+    text-align: right;
+  }
+
+  #team-panels .panels-container .panel .panel-image {
+    height: auto;
+  }
+
+  #team-panels .panels-container .panel img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #team-panels .panel-content-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #team-panels .panels-container .panel:first-child .panel-content-wrapper {
+    padding-left: 20px;
+  }
+
+  #team-panels .panels-container .panel:last-child .panel-content-wrapper {
+    padding-right: 20px;
+  }
+
+  .team-name-panel,
+  .team-cat-panel {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 
 /*--------------------------------------------------
 	Responsive
