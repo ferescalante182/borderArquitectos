@@ -121,7 +121,7 @@
                           <a
                             class=""
                             data-type=""
-                            href="#about"
+                            href="#new-about-section"
                             ><div class="before-span">
                               <span data-hover="About">About</span>
                             </div></a
@@ -137,39 +137,7 @@
                             </div></a
                           >
                         </li>
-                        <li class="link menu-timeline">
-                          <a class="" href="#"
-                            ><div class="before-span">
-                              <span data-hover="More">More</span>
-                            </div></a
-                          >
-                          <ul>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="typography.html"
-                                data-type="page-transition"
-                                >Typography</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="multimedia.html"
-                                data-type="page-transition"
-                                >Multimedia</a
-                              >
-                            </li>
-                            <li>
-                              <a
-                                class="ajax-link"
-                                href="shortcodes.html"
-                                data-type="page-transition"
-                                >Shortcodes</a
-                              >
-                            </li>
-                          </ul>
-                        </li>
+                        
                       </ul>
                     </div>
                   </div>
@@ -201,6 +169,7 @@
 
           <!-- Content Scroll -->
           <div id="content-scroll">
+            
             <!-- Main -->
             <div id="main">
              
@@ -532,50 +501,103 @@
               
 <!-- Row -->
 
-<section id="about">
-<div class="content-row light-section full" data-bgcolor="#eee">
-  <h2 style="text-align: center;">Meet Our Team</h2>
-  <div id="team-panels" class="">
-    <div class="panels-container">
-      <div class="panel">
-        <div class="panel-content-wrapper">
-          <div class="panel-image">
-            <img src="images/alberto.JPG" alt="Alberto Montemayor">
-          </div>
-          <div class="panel-content">
-            <div class="team-name-panel">Alberto Montemayor</div>
-            <div class="team-cat-panel">Lead Architect</div>
-          </div>
-        </div>
+<section id="new-about-section" style="padding: 20px; background-color: #f9f9f9;">
+  <h2 style="text-align: center; margin-bottom: 40px; font-size: 24px;">Meet Our Team</h2>
+  
+  <div id="new-team-container" style="display: flex; flex-wrap: wrap; justify-content: space-evenly; gap: 20px;">
+    <div class="team-member" style="flex: 1 1 30%; box-sizing: border-box; text-align: center;">
+      <div class="team-image-wrapper" style="width: 100%; padding-top: 100%; position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 15px;">
+        <img src="images/alberto.JPG" alt="Alberto Montemayor" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
       </div>
-      <div class="panel">
-        <div class="panel-content-wrapper">
-          <div class="panel-image">
-            <img src="images/christianGalicia.png" alt="Christian Galicia">
-          </div>
-          <div class="panel-content">
-            <div class="team-name-panel">Christian Galicia</div>
-            <div class="team-cat-panel">Lead Architect</div>
-          </div>
-        </div>
+      <div class="team-info" style="padding: 0 10px;">
+        <h3 style="margin: 5px 0; font-size: 18px;">Alberto Montemayor</h3>
+        <p style="margin: 0; font-size: 14px; color: #666;">Lead Architect</p>
       </div>
-      <div class="panel">
-        <div class="panel-content-wrapper">
-          <div class="panel-image">
-            <img src="images/dude.JPG" alt="Feliz Hernandez">
-          </div>
-          <div class="panel-content">
-            <div class="team-name-panel">Feliz Hernandez</div>
-            <div class="team-cat-panel">Architect Designer</div>
-          </div>
-        </div>
+    </div>
+
+    <div class="team-member" style="flex: 1 1 30%; box-sizing: border-box; text-align: center;">
+      <div class="team-image-wrapper" style="width: 100%; padding-top: 100%; position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 15px;">
+        <img src="images/christianGalicia.png" alt="Christian Galicia" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="team-info" style="padding: 0 10px;">
+        <h3 style="margin: 5px 0; font-size: 18px;">Christian Galicia</h3>
+        <p style="margin: 0; font-size: 14px; color: #666;">Lead Architect</p>
+      </div>
+    </div>
+
+    <div class="team-member" style="flex: 1 1 30%; box-sizing: border-box; text-align: center;">
+      <div class="team-image-wrapper" style="width: 100%; padding-top: 100%; position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 15px;">
+        <img src="images/dude.JPG" alt="Feliz Hernandez" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="team-info" style="padding: 0 10px;">
+        <h3 style="margin: 5px 0; font-size: 18px;">Feliz Hernandez</h3>
+        <p style="margin: 0; font-size: 14px; color: #666;">Architect Designer</p>
       </div>
     </div>
   </div>
-</div> 
-<!--/Row -->
 </section>
 
+<!-- Responsive styling -->
+<style>
+  @media screen and (max-width: 1024px) {
+    #new-team-container .team-member {
+      flex: 1 1 45%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    #new-team-container {
+      flex-direction: column;
+      padding: 0 20px; /* Add padding to the container for spacing */
+    }
+
+    #new-team-container .team-member {
+      flex: 1 1 100%;
+      margin-bottom: 20px;
+    }
+  }
+</style>
+
+
+<section id="sponsors" style="padding: 50px 0; background-color: #fff;">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <h2 style="font-size: 24px; font-weight: bold;">Our Sponsors</h2>
+  </div>
+
+  <div style="width: 100%; overflow: hidden; position: relative;">
+    <div id="slider" style="display: flex; width: 200%;">
+      <!-- First set of images -->
+      <img src="images/border.png" alt="Image 1" style="width: 10%; flex-shrink: 0;">
+      <img src="images/border.png" alt="Image 2" style="width: 10%; flex-shrink: 0;">
+      <img src="images/border.png" alt="Image 3" style="width: 10%; flex-shrink: 0;">
+      <img src="images/border.png" alt="Image 4" style="width: 10%; flex-shrink: 0;">
+      <img src="images/border.png" alt="Image 5" style="width: 10%; flex-shrink: 0;">
+      <!-- Duplicate the set of images to ensure seamless looping -->
+      <img src="images/border.png" alt="Image 1" style="width: 10%; flex-shrink: 0;">
+      <img src="images/border.png" alt="Image 2" style="width: 10%; flex-shrink: 0;">
+      <img src="images/border.png" alt="Image 3" style="width: 10%; flex-shrink: 0;">
+      <img src="images/border.png" alt="Image 4" style="width: 10%; flex-shrink: 0;">
+      <img src="images/border.png" alt="Image 5" style="width: 10%; flex-shrink: 0;">
+    </div>
+  </div>
+
+  <script>
+    const slider = document.getElementById('slider');
+    let startPosition = 0;
+    const sliderSpeed = 1; // Speed of the slider, the higher the faster
+
+    function animateSlider() {
+      startPosition -= sliderSpeed;
+      if (Math.abs(startPosition) >= slider.offsetWidth / 2) {
+        startPosition = 0; // Reset position for seamless loop
+      }
+      slider.style.transform = `translateX(${startPosition}px)`;
+      requestAnimationFrame(animateSlider);
+    }
+
+    animateSlider();
+  </script>
+</section>
 
 
 

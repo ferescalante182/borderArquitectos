@@ -1411,3 +1411,6 @@ span[data-hover="Scroll to Explore"] {
 	}
   }
   
+  html, body {
+    overflow-x: hidden;
+}
