@@ -1414,3 +1414,25 @@ span[data-hover="Scroll to Explore"] {
   html, body {
     overflow-x: hidden;
 }
+
+/* Prevent horizontal scrolling and ensure elements stay within the viewport */
+#content-scroll {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Ensure the width does not exceed the viewport */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+/* Ensure all child elements inside content-scroll also fit within the viewport */
+#content-scroll > * {
+    max-width: 100%; /* Prevent any child element from exceeding the container's width */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+
+
+/* Adjust content scroll padding to account for fixed header */
+#content-scroll {
+    padding-top: 80px; /* Adjust based on header height */
+}
+
+
