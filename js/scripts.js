@@ -2072,3 +2072,8 @@ var LoadViaAjax = window.LoadViaAjax;
 document.addEventListener('touchstart', function(event) {
     event.preventDefault(); // This could block the tap-to-top function
 });
+
+// Avoid this kind of code which might prevent native behaviors
+document.addEventListener('scroll', function(event) {
+    event.preventDefault(); // This might block the pull-to-refresh feature
+});
