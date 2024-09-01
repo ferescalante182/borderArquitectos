@@ -2068,3 +2068,7 @@ var LoadViaAjax = window.LoadViaAjax;
 	
 
 
+// Example of preventing default behavior
+document.addEventListener('touchstart', function(event) {
+    event.preventDefault(); // This could block the tap-to-top function
+});
