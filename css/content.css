@@ -1365,7 +1365,7 @@ html {
 
 .social-media-icons {
 	display: flex;
-	flex-direction: column; /* Stack the icons vertically */
+	flex-direction: row; /* Stack the icons horizontally */
 	gap: 10px; /* Space between the icons */
 }
 
@@ -1378,6 +1378,7 @@ html {
 .social-icon:hover {
 	color: #0077ff; /* Change color on hover */
 }
+
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
