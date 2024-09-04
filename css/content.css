@@ -1355,29 +1355,33 @@ html {
 
 html {
     scroll-behavior: smooth;
+}.hero-footer {
+    position: relative; /* Ensure the footer is a positioned element */
 }
+
 .hero-footer-right { 
-	position: absolute;
-	right: 20px; /* Adjust the position to the right */
-	top: -70%; /* Adjust this value to make the icons appear higher */
-	transform: translateY(-40%); /* Center the icons vertically based on the adjusted top value */
+    position: absolute;
+    right: 20px; /* Adjust the position to the right */
+    top: 50%; /* Position relative to the footer height */
+    transform: translateY(-50%); /* Center vertically */
 }
 
 .social-media-icons {
-	display: flex;
-	flex-direction: row; /* Stack the icons horizontally */
-	gap: 10px; /* Space between the icons */
+    display: flex;
+    flex-direction: row; /* Stack the icons horizontally */
+    gap: 10px; /* Space between the icons */
 }
 
 .social-icon {
-	font-size: 24px; /* Adjust icon size */
-	color: #000; /* Adjust icon color */
-	text-decoration: none;
+    font-size: 24px; /* Adjust icon size */
+    color: #000; /* Adjust icon color */
+    text-decoration: none;
 }
 
 .social-icon:hover {
-	color: #0077ff; /* Change color on hover */
+    color: #0077ff; /* Change color on hover */
 }
+
 
 
 /* Media Query for Mobile Devices */
