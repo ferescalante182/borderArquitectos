@@ -108,6 +108,18 @@
                           
                          
                         </li>
+
+
+                        <li class="link menu-timeline">
+                          <a
+                            class=""
+                            data-type=""
+                            href="#oficina"
+                            ><div class="before-span">
+                              <span data-hover="oficina">oficina</span>
+                            </div></a
+                          >
+                        </li>
                         <li class="link menu-timeline">
                           <a class="" href="#projects" (click)="someFunc($event)">
                               <div class="before-span">
@@ -121,9 +133,9 @@
                           <a
                             class=""
                             data-type=""
-                            href="#new-about-section"
+                            href="#servicios"
                             ><div class="before-span">
-                              <span data-hover="About">About</span>
+                              <span data-hover="SERVICIOS">servicios</span>
                             </div></a
                           >
                         </li>
@@ -484,13 +496,12 @@
                 
                   
                 <section id="awards-section" style="padding: 20px;">
-                  <h2 style="text-align: center; margin-bottom: 20px;">Our Awards</h2>
                   
                   <div id="awards-container" style="display: flex; justify-content: center;">
                     <table style="width: 80%; border-collapse: collapse; text-align: left; border: 1px solid #ccc;">
                       <thead>
                         <tr>
-                          <th style="border-bottom: 1px solid #ccc; padding: 8px; font-weight: normal;">Year</th>
+                          <th style="border-bottom: 1px solid #863838; padding: 8px; font-weight: normal;">Year</th>
                           <th style="border-bottom: 1px solid #ccc; padding: 8px; font-weight: normal;">Award</th>
                           <th style="border-bottom: 1px solid #ccc; padding: 8px; font-weight: normal;">Description</th>
                         </tr>
@@ -512,8 +523,8 @@
               
 <!-- Row -->
 
-<section id="about-section">
-  <h2 style="text-align: center; margin-bottom: 40px; width: 100%;">Meet Our Team</h2>
+<section id="oficina">
+  <h2 style="text-align: center; margin-bottom: 40px; width: 100%;">oficina</h2>
   
   <div id="team-container" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; width: 100%;">
     <div class="team-member" style="text-align: center; flex: 1 1 25%; max-width: 25%;">
@@ -571,25 +582,55 @@
 </style>
 
 
-<section id="sponsors" style="padding: 50px 0;">
+<section id="servicios" style="padding: 50px 0;">
   <div style="text-align: center; margin-bottom: 30px;">
-    <h2 style="font-size: 40px;">Servicios</h2>
+    <h2 style="text-align: center; margin-bottom: 40px; width: 100%;">servicios</h2>
   </div>
 
   <div style="width: 100%; overflow: hidden; position: relative;">
-    <div id="slider" style="display: flex; width: 200%;">
-      <!-- First set of images -->
-      <img src="images/border.png" alt="Image 1" style="width: 10%; flex-shrink: 0;">
-      <img src="images/border.png" alt="Image 2" style="width: 10%; flex-shrink: 0;">
-      <img src="images/border.png" alt="Image 3" style="width: 10%; flex-shrink: 0;">
-      <img src="images/border.png" alt="Image 4" style="width: 10%; flex-shrink: 0;">
-      <img src="images/border.png" alt="Image 5" style="width: 10%; flex-shrink: 0;">
-      <!-- Duplicate the set of images to ensure seamless looping -->
-      <img src="images/border.png" alt="Image 1" style="width: 10%; flex-shrink: 0;">
-      <img src="images/border.png" alt="Image 2" style="width: 10%; flex-shrink: 0;">
-      <img src="images/border.png" alt="Image 3" style="width: 10%; flex-shrink: 0;">
-      <img src="images/border.png" alt="Image 4" style="width: 10%; flex-shrink: 0;">
-      <img src="images/border.png" alt="Image 5" style="width: 10%; flex-shrink: 0;">
+    <div id="slider" style="display: flex; width: 200%; gap: 25px; justify-content: center;">
+      <!-- First set of images with text underneath -->
+      <div style="text-align: center;">
+        <img src="images/analisis.png" alt="Image 1"  >
+        <p>Icono 1</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/IDEAS.png" alt="Image 2"  >
+        <p>Ideas</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/desarrollo.png" alt="Image 3"  >
+        <p>Desarrollo</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/permisos.png" alt="Image 4"  >
+        <p>Permisos</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/calendar.png" alt="Image 5" >
+        <p>Calendario</p>
+      </div>
+      <!-- Duplicate the set of images with text to ensure seamless looping -->
+      <div style="text-align: center;">
+        <img src="images/analisis.png" alt="Image 1" >
+        <p>Icono 1</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/IDEAS.png" alt="Image 2"  >
+        <p>Ideas</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/desarrollo.png" alt="Image 3"  >
+        <p>Desarrollo</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/permisos.png" alt="Image 4"  >
+        <p>Permisos</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/calendar.png" alt="Image 5"  >
+        <p>Calendario</p>
+      </div>
     </div>
   </div>
 
@@ -610,6 +651,8 @@
     animateSlider();
   </script>
 </section>
+
+
 
 
 
