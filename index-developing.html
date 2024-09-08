@@ -121,9 +121,9 @@
                           >
                         </li>
                         <li class="link menu-timeline">
-                          <a class="" href="#projects" (click)="someFunc($event)">
+                          <a class="" href="#loquehacemos" (click)="someFunc($event)">
                               <div class="before-span">
-                                  <span data-hover="Proyectos">Proyectos</span>
+                                  <span data-hover="lo que hacemos">lo que hacemos</span>
                               </div>
                           </a>
                        </li>
@@ -343,7 +343,7 @@
 
                  
 
-                  <section id="projects">
+                  <section id="loquehacemos">
                     <div class="content-row row_padding_bottom full light-section" data-bgcolor="#eee">
                         <h2 class="section-title" style="text-align: center; width: 100%;">LO QUE HACEMOS</h2>
                         <div id="itemsWrapperLinks">
@@ -517,7 +517,93 @@
                   </div>
                 </section>
                 
-                
+                <section id="servicios" style="padding: 50px 0;">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <h2 style="text-align: center; margin-bottom: 40px; width: 100%;">servicios</h2>
+  </div>
+
+  <div style="width: 100%; overflow: hidden; position: relative;">
+    <div id="slider" style="display: flex; width: 200%; gap: 25px; justify-content: center;">
+      <!-- First set of images with text underneath -->
+      <div style="text-align: center;">
+        <img src="images/analisis.png" alt="Image 1"  >
+        <p>analisis</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/finanzas.png" alt="Image 1"  >
+        <p>finanzas</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/ejecucion.png" alt="Image 1"  >
+        <p>ejecucion</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/IDEAS.png" alt="Image 2"  >
+        <p>Ideas</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/desarrollo.png" alt="Image 3"  >
+        <p>Desarrollo</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/permisos.png" alt="Image 4"  >
+        <p>Permisos</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/calendar.png" alt="Image 5" >
+        <p>Calendario</p>
+      </div>
+      <!-- Duplicate the set of images with text to ensure seamless looping -->
+      <div style="text-align: center;">
+        <img src="images/analisis.png" alt="Image 1" >
+        <p>analisis</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/finanzas.png" alt="Image 1"  >
+        <p>finanzas</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/ejecucion.png" alt="Image 1"  >
+        <p>ejecucion</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/IDEAS.png" alt="Image 2"  >
+        <p>Ideas</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/desarrollo.png" alt="Image 3"  >
+        <p>Desarrollo</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/permisos.png" alt="Image 4"  >
+        <p>Permisos</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="images/calendar.png" alt="Image 5"  >
+        <p>Calendario</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const slider = document.getElementById('slider');
+    let startPosition = 0;
+    const sliderSpeed = 1; // Speed of the slider, the higher the faster
+
+    function animateSlider() {
+      startPosition -= sliderSpeed;
+      if (Math.abs(startPosition) >= slider.offsetWidth / 2) {
+        startPosition = 0; // Reset position for seamless loop
+      }
+      slider.style.transform = `translateX(${startPosition}px)`;
+      requestAnimationFrame(animateSlider);
+    }
+
+    animateSlider();
+  </script>
+</section>
+
+
 
             
               
@@ -581,76 +667,6 @@
   }
 </style>
 
-
-<section id="servicios" style="padding: 50px 0;">
-  <div style="text-align: center; margin-bottom: 30px;">
-    <h2 style="text-align: center; margin-bottom: 40px; width: 100%;">servicios</h2>
-  </div>
-
-  <div style="width: 100%; overflow: hidden; position: relative;">
-    <div id="slider" style="display: flex; width: 200%; gap: 25px; justify-content: center;">
-      <!-- First set of images with text underneath -->
-      <div style="text-align: center;">
-        <img src="images/analisis.png" alt="Image 1"  >
-        <p>Icono 1</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/IDEAS.png" alt="Image 2"  >
-        <p>Ideas</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/desarrollo.png" alt="Image 3"  >
-        <p>Desarrollo</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/permisos.png" alt="Image 4"  >
-        <p>Permisos</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/calendar.png" alt="Image 5" >
-        <p>Calendario</p>
-      </div>
-      <!-- Duplicate the set of images with text to ensure seamless looping -->
-      <div style="text-align: center;">
-        <img src="images/analisis.png" alt="Image 1" >
-        <p>Icono 1</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/IDEAS.png" alt="Image 2"  >
-        <p>Ideas</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/desarrollo.png" alt="Image 3"  >
-        <p>Desarrollo</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/permisos.png" alt="Image 4"  >
-        <p>Permisos</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/calendar.png" alt="Image 5"  >
-        <p>Calendario</p>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const slider = document.getElementById('slider');
-    let startPosition = 0;
-    const sliderSpeed = 1; // Speed of the slider, the higher the faster
-
-    function animateSlider() {
-      startPosition -= sliderSpeed;
-      if (Math.abs(startPosition) >= slider.offsetWidth / 2) {
-        startPosition = 0; // Reset position for seamless loop
-      }
-      slider.style.transform = `translateX(${startPosition}px)`;
-      requestAnimationFrame(animateSlider);
-    }
-
-    animateSlider();
-  </script>
-</section>
 
 
 
