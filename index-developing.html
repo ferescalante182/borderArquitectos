@@ -27,10 +27,29 @@
       ga("send", "pageview");
     </script>
 
-    <title>Border Arquitectos -  </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Arquitectos - Architecture Studio in Tijuana & San Diego</title>
     
+    <!-- Meta Tags for SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
+    <meta name="description" content="Border Arquitectos is a leading architecture studio providing innovative architectural designs in Tijuana, Mexico, and San Diego, California. Specializing in residential and commercial projects." />
+    <meta name="keywords" content="Architecture Studio, Tijuana, San Diego, Mexico, California, Residential Architecture, Commercial Architecture, Architectural Design, Border Arquitectos" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Border Arquitectos" />
+    <meta name="language" content="en, es" />
+    <meta name="geo.region" content="MX-BCN" />
+    <meta name="geo.placename" content="Tijuana" />
+    <meta name="geo.region" content="US-CA" />
+    <meta name="geo.placename" content="San Diego" />
+    
+    <!-- Social Sharing Optimization -->
+    <meta property="og:title" content="Border Arquitectos - Architecture Studio in Tijuana & San Diego" />
+    <meta property="og:description" content="Innovative architectural designs for residential and commercial projects in Tijuana, Mexico, and San Diego, California." />
+    <meta property="og:image" content="images/architecture-social.jpg" />
+    <meta property="og:url" content="https://borderarquitectos.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    
     <link rel="icon" type="image/ico" href="images/border-white.ico" />
     <link href="style.css" rel="stylesheet" />
     <link href="css/all.min.css" rel="stylesheet" />
@@ -39,8 +58,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 
-  </head>
 
   <body
     class="hidden hidden-ball hero-below-caption smooth-scroll uppercase-text"
@@ -517,92 +536,44 @@
                   </div>
                 </section>
                 
-                <section id="servicios" style="padding: 50px 0;">
-  <div style="text-align: center; margin-bottom: 30px;">
-    <h2 style="text-align: center; margin-bottom: 40px; width: 100%;">servicios</h2>
-  </div>
-
-  <div style="width: 100%; overflow: hidden; position: relative;">
-    <div id="slider" style="display: flex; width: 200%; gap: 25px; justify-content: center;">
-      <!-- First set of images with text underneath -->
-      <div style="text-align: center;">
-        <img src="images/analisis.png" alt="Image 1"  >
-        <p><strong>Análisis financieros para <br> desarrollo de proyectos <br> de inversión</strong></p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/finanzas.png" alt="Image 1"  >
-        <p><strong>Desarrollo de Proyectos Conceptuales y viabilidades.</strong></p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/ejecucion.png" alt="Image 1"  >
-        <p>ejecucion</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/IDEAS.png" alt="Image 2"  >
-        <p>Ideas</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/desarrollo.png" alt="Image 3"  >
-        <p>Desarrollo</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/permisos.png" alt="Image 4"  >
-        <p>Permisos</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/calendar.png" alt="Image 5" >
-        <p>Calendario</p>
-      </div>
-      <!-- Duplicate the set of images with text to ensure seamless looping -->
-      <div style="text-align: center;">
-        <img src="images/analisis.png" alt="Image 1" >
-        <p><strong>Análisis financieros para <br> desarrollo de proyectos <br> de inversión</strong></p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/finanzas.png" alt="Image 1"  >
-        <p><strong>Desarrollo de Proyectos Conceptuales y viabilidades.</strong></p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/ejecucion.png" alt="Image 1"  >
-        <p>ejecucion</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/IDEAS.png" alt="Image 2"  >
-        <p>Ideas</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/desarrollo.png" alt="Image 3"  >
-        <p>Desarrollo</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/permisos.png" alt="Image 4"  >
-        <p>Permisos</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="images/calendar.png" alt="Image 5"  >
-        <p>Calendario</p>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    const slider = document.getElementById('slider');
-    let startPosition = 0;
-    const sliderSpeed = 1; // Speed of the slider, the higher the faster
-
-    function animateSlider() {
-      startPosition -= sliderSpeed;
-      if (Math.abs(startPosition) >= slider.offsetWidth / 2) {
-        startPosition = 0; // Reset position for seamless loop
-      }
-      slider.style.transform = `translateX(${startPosition}px)`;
-      requestAnimationFrame(animateSlider);
-    }
-
-    animateSlider();
-  </script>
-</section>
-
+                <section id="servicios" style="padding: 100px 0;">
+                  <div style="text-align: center; margin-bottom: 30px;">
+                    <h2 style="text-align: center; margin-bottom: 40px; width: 100%;">Servicios</h2>
+                  </div>
+                
+                  <div style="width: 100%; display: flex; flex-wrap: wrap; gap: 25px; justify-content: center;">
+                    <!-- First row of images with text underneath -->
+                    <div style="text-align: center; width: 30%;">
+                      <img src="images/analisis.png" alt="Análisis financieros" style="width: 100px;">
+                      <p><strong>Análisis financieros para <br> desarrollo de proyectos <br> de inversión</strong></p>
+                    </div>
+                    <div style="text-align: center; width: 30%;">
+                      <img src="images/IDEAS.png" alt="Desarrollo de Proyectos" style="width: 100px;">
+                      <p><strong>Desarrollo de Proyectos Conceptuales y viabilidades</strong></p>
+                    </div>
+                    <div style="text-align: center; width: 30%;">
+                      <img src="images/desarrollo.png" alt="Desarrollo de documentos" style="width: 100px;">
+                      <p><strong>Desarrollo de documentos de construcción</strong></p>
+                    </div>
+                    <div style="text-align: center; width: 30%;">
+                      <img src="images/permisos.png" alt="Permisos para construcción" style="width: 100px;">
+                      <p><strong>Estudios, gestión y permisos para construcción</strong></p>
+                    </div>
+                    <div style="text-align: center; width: 30%;">
+                      <img src="images/calendar.png" alt="Programación y planificación" style="width: 100px;">
+                      <p><strong>Programación y planificación de proyectos</strong></p>
+                    </div>
+                    <div style="text-align: center; width: 30%;">
+                      <img src="images/finanzas.png" alt="Control de construcción" style="width: 100px;">
+                      <p><strong>Control y administración de construcción</strong></p>
+                    </div>
+                    <div style="text-align: center; width: 30%;">
+                      <img src="images/ejecucion.png" alt="Supervisión de obra" style="width: 100px;">
+                      <p><strong>Supervisión y ejecución de obra terminada</strong></p>
+                    </div>
+                  </div>
+                </section>
+                
 
 
             
@@ -644,6 +615,61 @@
     </div>
   </div>
 </section>
+
+
+<section id="servicios" style="padding: 50px 0;">
+  <div style="text-align: center; margin-bottom: 30px;">
+    <h2 style="text-align: center; margin-bottom: 40px; width: 100%;">certificaciones y acreditaciones</h2>
+  </div>
+
+  <div style="width: 100%; overflow: hidden; position: relative;">
+    <div id="slider" style="display: flex; width: 200%; gap: 25px; justify-content: center;">
+      <!-- First set of images with text underneath -->
+      <div style="text-align: center;">
+        <img src="images/suzmtac-black.png" alt="Image 1"  >
+      </div>
+      <div style="text-align: center;">
+        <img src="images/urbanland.png" alt="Image 1"  >
+      </div>
+      <div style="text-align: center;">
+        <img src="images/ncarb-black.png" alt="Image 1"  >
+      </div>
+      
+      <!-- Duplicate the set of images with text to ensure seamless looping -->
+      <div style="text-align: center;">
+        <img src="images/suzmtac-black.png" alt="Image 1" >
+      </div>
+      <div style="text-align: center;">
+        <img src="images/urbanland.png" alt="Image 1"  >
+      </div>
+      <div style="text-align: center;">
+        <img src="images/ncarb-black.png" alt="Image 1"  >
+      </div>
+     
+    </div>
+  </div>
+
+  <script>
+    const slider = document.getElementById('slider');
+    let startPosition = 0;
+    const sliderSpeed = 1; // Speed of the slider, the higher the faster
+
+    function animateSlider() {
+      startPosition -= sliderSpeed;
+      if (Math.abs(startPosition) >= slider.offsetWidth / 2) {
+        startPosition = 0; // Reset position for seamless loop
+      }
+      slider.style.transform = `translateX(${startPosition}px)`; // Corrected with backticks
+      requestAnimationFrame(animateSlider);
+    }
+
+    animateSlider();
+</script>
+
+</section>
+
+
+
 
 
 <!-- Responsive styling -->
