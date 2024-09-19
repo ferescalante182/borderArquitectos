@@ -278,7 +278,15 @@ footer .swiper-pagination {
   top: 20px;
   max-width: 400px;
   pointer-events: initial;
+
 }
+
+@media only screen and (min-width: 768px) {
+  footer.hidden {
+    display: block;
+  }
+}
+
 
 .showcase-footer.slider .swiper-pagination {
   position: relative;
