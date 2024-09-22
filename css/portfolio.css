@@ -1643,3 +1643,13 @@
 html {
     scroll-behavior: smooth;
 }
+
+.active a {
+	color: #a3834b; /* Or any color to indicate it's active */
+	font-weight: bold;
+  }
+  
+  .active .before-span {
+	border-bottom: 2px solid #a3834b; /* Adding an underline or similar effect */
+  }
+  
