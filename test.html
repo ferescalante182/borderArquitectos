@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+    Author: ChatGPT
+    Date: 2025
+    Description: Single-page website for "Timeless Digital" using HTML & CSS only.
+    Note: This website is fully responsive, uses semantic HTML5 tags, and 
+          follows the provided guidelines for design, structure, and accessibility.
+  -->
+  <meta charset="UTF-8">
+  <meta name="description" content="Professional digital solutions from Timeless Digital.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeless Digital</title>
+  
+  <style>
+    /* 
+      GLOBAL STYLES
+      -------------
+      - Define font, colors, box-sizing, and default margin/padding resets for the entire page.
+      - Use Flexbox/CSS Grid for responsiveness and simple layout control.
+    */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;               /* Dark text for readability */
+      background-color: #f4f4f4; /* Light background for a clean layout */
+      line-height: 1.6;
+    }
+
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Container utility class for consistent horizontal padding */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* 
+      HEADER & NAVBAR
+      ---------------
+    */
+    header {
+      background-color: #ffffff;
+      position: sticky;          /* Keep the header visible on scroll */
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+    }
+
+    /* Logo or placeholder text */
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Navigation links */
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav ul li {
+      display: inline-block;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #e0e0e0;
+      border-radius: 4px;
+    }
+
+    /* 
+      HERO SECTION
+      ------------
+      - Large background with a tagline
+      - Prominent CTA (Call To Action) button
+    */
+    .hero {
+      background: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.4), 
+          rgba(0, 0, 0, 0.4)
+        ),
+        url('https://via.placeholder.com/1600x900.png?text=Hero+Image') no-repeat center center/cover;
+      /* Fallback background color if image fails to load */
+      background-color: #d3d3d3;
+      color: #ffffff;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero .btn-cta {
+      text-decoration: none;
+      background-color: #007bff; /* Accent color for call-to-action */
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero .btn-cta:hover {
+      background-color: #0056b3;
+    }
+
+    /* 
+      SERVICES SECTION
+      ----------------
+      - Showcase at least three services 
+      - Use placeholder images/icons
+    */
+    #services {
+      padding: 3rem 0;
+      background-color: #ffffff;
+    }
+
+    #services h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .services-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .service {
+      background-color: #f9f9f9;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 4px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .service:hover {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .service img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+
+    .service h3 {
+      margin-bottom: 1rem;
+    }
+
+    /* 
+      ABOUT SECTION
+      -------------
+      - Brief company overview, mission statement, and possibly a small mention of team or founder's quote
+    */
+    #about {
+      padding: 3rem 0;
+    }
+
+    #about h2 {
+      text-align: center;
+    }
+
+    .about-content {
+      margin: 2rem auto;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .founder-quote {
+      margin-top: 1.5rem;
+      font-style: italic;
+      color: #666;
+    }
+
+    /* 
+      PORTFOLIO SECTION
+      -----------------
+      - Display a grid of placeholder portfolio items
+    */
+    #portfolio {
+      padding: 3rem 0;
+      background-color: #ffffff;
+    }
+
+    #portfolio h2 {
+      text-align: center;
+    }
+
+    .portfolio-grid {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .portfolio-item {
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .portfolio-item .item-info {
+      padding: 1rem;
+    }
+
+    /* 
+      CONTACT SECTION
+      --------------
+      - Simple form with Name, Email, Message
+      - A short description encouraging users to contact
+    */
+    #contact {
+      padding: 3rem 0;
+    }
+
+    #contact h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-form label {
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #007bff; /* Accent color for buttons */
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #0056b3;
+    }
+
+    /* 
+      FOOTER
+      ------
+      - Social media links (placeholder)
+      - Copyright
+    */
+    footer {
+      background-color: #333;
+      color: #ffffff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    .social-links {
+      margin-bottom: 1rem;
+    }
+
+    .social-links a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #007bff; /* Accent color on hover */
+    }
+
+    /* 
+      MEDIA QUERIES
+      -------------
+      - Ensure the layout adjusts gracefully for tablets, mobile devices, etc.
+    */
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+        padding: 1rem 0;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-container">
+      <!-- Company Logo (placeholder text) -->
+      <div class="logo">Timeless Digital</div>
+
+      <!-- Navigation Bar (single-page, anchor-based scrolling) -->
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero" aria-label="Hero Section">
+    <!-- Large Heading/Tagline -->
+    <h1>Empowering Businesses with Digital Solutions</h1>
+    <!-- Subheading -->
+    <p>Delivering innovative and timeless results for our clients.</p>
+    <!-- Call-to-Action button linking to Contact Section -->
+    <a class="btn-cta" href="#contact">Contact Us</a>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" aria-label="Services Section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-wrapper">
+        <!-- Service #1 -->
+        <div class="service">
+          <img src="https://via.placeholder.com/80.png?text=Icon" alt="Service Icon 1">
+          <h3>Web Development</h3>
+          <p>We craft responsive, dynamic websites tailored to your brand’s unique needs.</p>
+        </div>
+        <!-- Service #2 -->
+        <div class="service">
+          <img src="https://via.placeholder.com/80.png?text=Icon" alt="Service Icon 2">
+          <h3>Digital Marketing</h3>
+          <p>Reach the right audience with our proven marketing strategies and solutions.</p>
+        </div>
+        <!-- Service #3 -->
+        <div class="service">
+          <img src="https://via.placeholder.com/80.png?text=Icon" alt="Service Icon 3">
+          <h3>UX/UI Design</h3>
+          <p>Create engaging user experiences with modern, clean, and intuitive interfaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" aria-label="About Section">
+    <div class="container">
+      <h2>About Timeless Digital</h2>
+      <div class="about-content">
+        <p>
+          Timeless Digital is a visionary agency devoted to helping businesses of all sizes 
+          thrive in the fast-paced digital world. Our mission is to deliver solutions that 
+          are future-proof, leveraging the latest technology and best practices in design 
+          and development.
+        </p>
+        <p class="founder-quote">
+          “Our mission is to create timeless solutions that empower businesses worldwide.” 
+          – Founder, Timeless Digital
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" aria-label="Portfolio Section">
+    <div class="container">
+      <h2>Our Portfolio</h2>
+      <div class="portfolio-grid">
+        <!-- Portfolio Item #1 -->
+        <div class="portfolio-item">
+          <img src="https://via.placeholder.com/400x250.png?text=Project+1" alt="Portfolio item 1">
+          <div class="item-info">
+            <h3>Project One</h3>
+            <p>A modern web redesign for a fashion brand.</p>
+          </div>
+        </div>
+        <!-- Portfolio Item #2 -->
+        <div class="portfolio-item">
+          <img src="https://via.placeholder.com/400x250.png?text=Project+2" alt="Portfolio item 2">
+          <div class="item-info">
+            <h3>Project Two</h3>
+            <p>A digital marketing campaign for a tech startup.</p>
+          </div>
+        </div>
+        <!-- Portfolio Item #3 -->
+        <div class="portfolio-item">
+          <img src="https://via.placeholder.com/400x250.png?text=Project+3" alt="Portfolio item 3">
+          <div class="item-info">
+            <h3>Project Three</h3>
+            <p>UX/UI overhaul for a financial services platform.</p>
+          </div>
+        </div>
+        <!-- Add more items as desired -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" aria-label="Contact Section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="contact-info">
+        Interested in working with us? Get in touch below. We look forward to hearing from you!
+      </p>
+      <div class="contact-form">
+        <form action="#" method="POST">
+          <!-- 
+            By default, no external server is handling the POST request.
+            In production, the 'action' attribute should point to a form handling script or service.
+          -->
+
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <!-- Placeholder social media links -->
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">Facebook</a>|
+        <a href="#" aria-label="Twitter">Twitter</a>|
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+      <p>© 2025 Timeless Digital</p>
+    </div>
+  </footer>
+</body>
+</html>
