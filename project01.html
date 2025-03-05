@@ -1,414 +1,907 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		
-		ga('create', 'code_here', 'auto');
-		ga('send', 'pageview');
-	</script>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+           i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+
+      ga("create", "code_here", "auto");
+      ga("send", "pageview");
+    </script>
+
+    <title>Border Arquitectos - Architecture Studio in Tijuana & San Diego</title>
     
-    <title>Border Arquitectos</title>   
+    <!-- Meta Tags for SEO -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Download the best Creative Portfolio HTML Template in 2022" />
-    <meta name="author" content="ClaPat Studio">
-    <meta charset="UTF-8" />    
-    <link rel="icon" type="image/ico" href="favicon.ico" />
-    <link href="style.css" rel="stylesheet" />
-    <link href="css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
-   
-</head>    
-
-
-<body class="hidden hidden-ball hero-below-caption smooth-scroll uppercase-text" data-primary-color="#a3834b">
-
-	
-	<main>		
-        <!-- Preloader -->
-        <div class="preloader-wrap" data-firstline="Stay" data-secondline="Relaxed">
-            <div class="outer">
-                <div class="inner">                    
-                    <div class="trackbar">
-                    	<ul class="preloader-intro">
-                        	<li class="preloader-list">Infill</li>
-                            <li class="preloader-list">Density</li>
-                            <li class="preloader-list">Quality</li>
-                            <li class="preloader-list">Values</li>
-                            <li class="preloader-list">Increase</li>
-                            <li class="preloader-list">Urban</li>
-                            <li class="preloader-list">Sustainability</li>
-                            <li class="preloader-list">Community</li>
-                            <li class="preloader-list">Architecture</li>
-                            <li class="preloader-list">Livability</li>
-
-                        </ul>
-                        <div class="loadbar"></div>
-                    </div>
-                    <div class="percentage-wrapper"><div class="percentage" id="precent"></div></div>
-                    <div class="percentage-intro">Please Wait</div>                     
-                </div>
-            </div>
-        </div>
-        <!--/Preloader -->    
-        
-        <div class="cd-index cd-main-content">
+    <meta charset="UTF-8" />
+    <meta name="description" content="Border Arquitectos is a leading architecture studio providing innovative architectural designs in Tijuana, Mexico, and San Diego, California. Specializing in residential and commercial projects." />
+    <meta name="keywords" content="Architecture Studio, Tijuana, San Diego, Mexico, California, Residential Architecture, Commercial Architecture, Architectural Design, Border Arquitectos" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Border Arquitectos" />
+    <meta name="language" content="en, es" />
+    <meta name="geo.region" content="MX-BCN" />
+    <meta name="geo.placename" content="Tijuana" />
+    <meta name="geo.region" content="US-CA" />
+    <meta name="geo.placename" content="San Diego" />
     
+    <!-- Social Sharing Optimization -->
+    <meta property="og:title" content="Border Arquitectos - Architecture Studio in Tijuana & San Diego" />
+    <meta property="og:description" content="Innovative architectural designs for residential and commercial projects in Tijuana, Mexico, and San Diego, California." />
+    <meta property="og:image" content="images/architecture-social.jpg" />
+    <meta property="og:url" content="https://borderarquitectos.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    
+    <link rel="icon" type="image/ico" href="images/border-white.ico" />
+    
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+
+  <body class="hidden hidden-ball hero-below-caption smooth-scroll uppercase-text" data-primary-color="#a3834b">
+    <main>
+      <!-- Preloader -->
+      <div class="preloader-wrap" data-firstline="ALWAYS" data-secondline="IMPROVING">
+        <div class="outer">
+          <div class="inner">
+            <div class="trackbar">
+              <ul class="preloader-intro" style="font-size: 35px;">
+                <li class="preloader-list">Infill</li>
+                <li class="preloader-list">Density</li>
+                <li class="preloader-list">Quality</li>
+                <li class="preloader-list">Values</li>
+                <li class="preloader-list">Increase</li>
+                <li class="preloader-list">Urban</li>
+                <li class="preloader-list">Sustainability</li>
+                <li class="preloader-list">Community</li>
+                <li class="preloader-list">Architecture</li>
+                <li class="preloader-list">Livability</li>
+              </ul>
+              
+              <div class="loadbar"></div>
+            </div>
+            <div class="percentage-wrapper">
+              <div class="percentage" id="precent"></div>
+            </div>
+            <div class="percentage-intro">porfavor espere</div>
+          </div>
+        </div>
+      </div>
+      <!--/Preloader -->
+
+      <div class="cd-index cd-main-content">
         <!-- Page Content -->
         <div id="page-content" class="dark-content" data-bgcolor="#eee">
-            
-            <!-- Header -->
-            <header class="classic-menu invert-header" data-menucolor="#171717">
-                <div id="header-container">
-                
-                
-                <!-- Logo -->
-                <div id="logo" class="hide-ball">
-                    <a class="ajax-link" data-type="page-transition" href="index.html">
-                        <img class="black-logo" src="images/border.png" alt="ClaPat Logo">
-                        <img class="white-logo" src="images/border-white.png">
-                    </a>
-                </div>
-                <!--/Logo -->
-                            
-                
-                <!-- Navigation -->
-                <nav> 
-                	<div class="nav-height">
-                        <div class="outer">
-                            <div class="inner">           
-                                <ul data-breakpoint="1025" class="flexnav">
-                                    <li class="link menu-timeline"><a class="" href="index.html"><div class="before-span"><span data-hover="Home">Home</span></div></a>
-                                        <ul>
-                                            <li><a class="ajax-link" href="index-showcase.html" data-type="page-transition">Showcase Slider</a></li>
-                                            <li><a class="ajax-link" href="index-carousel.html" data-type="page-transition">Showcase Carousel</a></li>                                            
-                                            <li><a class="ajax-link" href="index-panels.html" data-type="page-transition">Parallax Panels</a></li>                                            
-                                            <li><a class="ajax-link" href="index-lists.html" data-type="page-transition">Archive Lists</a></li>                                            
-                                            <li><a class="ajax-link" href="index-reverse.html" data-type="page-transition">Reverse Columns</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="link menu-timeline"><a class="" href="#"><div class="before-span"><span data-hover="Portfolio">Projects</span></div></a>
-                                        <ul>                                            
-                                            <li><a class="ajax-link" href="portfolio-metro-grid.html" data-type="page-transition">Spaced Metro</a></li>                                            
-                                            <li><a class="ajax-link" href="portfolio-parallax-grid.html" data-type="page-transition">Random Parallax</a></li>                                            
-                                            <li><a class="ajax-link" href="portfolio-ladder-grid.html" data-type="page-transition">Ladder Grid</a></li>
-                                            <li><a class="ajax-link" href="portfolio-scaleout-grid.html" data-type="page-transition">Scaleout Thirds</a></li>
-                                            <li><a class="ajax-link" href="portfolio-classic-grid.html" data-type="page-transition">Classic Duo</a></li>
-                                            <li><a class="ajax-link" href="portfolio-mixed-grid.html" data-type="page-transition">Mixed Grid</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="about.html"><div class="before-span"><span data-hover="About">About</span></div></a></li>
-                                    <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="contact.html"><div class="before-span"><span data-hover="Contact">Contact</span></div></a></li>
-                                    <li class="link menu-timeline"><a class="" href="#"><div class="before-span"><span data-hover="More">More</span></div></a>
-                                        <ul>
-                                            <li><a class="ajax-link" href="typography.html" data-type="page-transition">Typography</a></li>                                         
-                                            <li><a class="ajax-link" href="multimedia.html" data-type="page-transition">Multimedia</a></li>
-                                            <li><a class="ajax-link" href="shortcodes.html" data-type="page-transition">Shortcodes</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>            
+          <!-- Header -->
+          <header class="classic-menu invert-header" data-menucolor="#171717">
+            <div id="header-container">
+              <!-- Logo -->
+              <div id="logo" class="hide-ball">
+                <a class="ajax-link" data-type="page-transition" href="index.html">
+                  <span style="font-weight: bold;">Border</span> Arquitectos
+                </a>
+              </div>
+              <!--/Logo -->
+
+              <!-- Navigation -->
+              <nav>
+                <div class="nav-height">
+                  <div class="outer">
+                    <div class="inner">
+                      <ul data-breakpoint="1025" class="flexnav">
+                        <li class="link menu-timeline">
+                          <a href="#home">
+                            <div class="before-span">
+                              <span data-hover="Home">Home</span>
                             </div>
-                        </div> 
-                    </div>          
-                </nav>
-                <!--/Navigation -->
+                          </a>
+                        </li>
+                        <li class="link menu-timeline">
+                          <a data-type="" href="#equipo">
+                            <div class="before-span">
+                              <span data-hover="equipo">equipo</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="link menu-timeline">
+                          <a href="#loquehacemos" (click)="someFunc($event)">
+                            <div class="before-span">
+                              <span data-hover="lo que hacemos">lo que hacemos</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="link menu-timeline">
+                          <a data-type="" href="#servicios">
+                            <div class="before-span">
+                              <span data-hover="SERVICIOS">servicios</span>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="link menu-timeline">
+                          <a data-type="" href="#contact">
+                            <div class="before-span">
+                              <span data-hover="Contactanos">Contactanos</span>
+                            </div>
+                          </a>
+                        </li>
+                        <!---
+                        <li class="link menu-timeline">
+                          <a data-type="" href="publicaciones.html">
+                            <div class="before-span">
+                              <span data-hover="publicaciones">Publicaciones</span>
+                            </div>
+                          </a>
+                        </li>
+                        --->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <!--/Navigation -->
+
+              <!-- Menu Burger -->
+              <div class="button-wrap right menu burger-lines">
+                <div class="icon-wrap parallax-wrap">
+                  <div class="button-icon parallax-element">
+                    <div id="burger-wrapper">
+                      <div id="menu-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-text sticky right">
+                  <span data-hover="Menu">Menu</span>
+                </div>
+              </div>
+              <!--/Menu Burger -->
+            </div>
+          </header>
+          <!--/Header -->
+
+          <!-- Content Scroll -->
+          <div id="content-scroll">
+            <!-- Main -->
+            <div id="main">
+              <section id="home"> <!-- Hero Section -->
+                <div id="hero">
+                  <div id="hero-styles">
+                    <div id="hero-caption" class="content-full-width parallax-scroll-caption indent-title">
+                      <div class="inner">
+                        <div class="hero-title-wrapper">
+                          <h1 class="hero-title">
+                            <span></span>
+                            <span></span>
+                          </h1>
+                        </div>
+                        <div class="hero-subtitle-wrapper">
+                          <h5 class="hero-subtitle"><span></span></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="hero-footer">
+                      <div class="hero-footer-left">
+                        <div class="button-wrap right scroll-down">
+                          <div class="icon-wrap parallax-wrap">
+                            <div class="button-icon parallax-element">
+                              <i class="arrow-icon-down"></i>
+                            </div>
+                          </div>
+                          <div class="button-text sticky right">
+                            <span data-hover="Scroll para descubrir" style="font-size: 15px;">
+                              Hub de diseño innovador ubicado en la frontera entre Tijuana, Mex.<br> San Diego, CA.
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="hero-footer-right">
+                        <div class="social-media-icons">
+                          <a href="https://facebook.com/borderarquitectos" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                          </a>
+                          <a href="https://instagram.com/border_arquitectos" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!--/Hero Section -->
+
+              <!-- Main Content -->
+              <div id="main-content">
+                <!-- Main Page Content -->
+                <div id="main-page-content" class="content-max-width">
+                  <!-- Row -->
+                  <div class="swiper-container content-slider has-animation disabled-slider-dots autocenter light-cursor">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slider9.jpg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slider10.jpg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slider22.jpeg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slider24.jpeg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slider20.jpeg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slider23.jpeg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slide16.jpg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slider17.jpg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slider21.jpeg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slider11.jpg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slider15.jpg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slide-img">
+                          <img src="images/slider12.jpg" alt="Image Title" loading="lazy">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-button-next"></div>
+                    <div class="slider-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+                  <!--/Row -->
+
+                  <!-- Row -->
+                  <div class="content-row row_padding_left row_padding_right full light-section fadeout-element" data-bgcolor="#eee">
+                    <hr>
+                    <h1 class="text-align-center">
+                      A través de un proceso de diseño integral, desarrollamos espacios que aumentan el valor de su inversión integrando estrategias de diseño escalables.
+                      <span class="has-hover-image hide-ball" data-img="images/studio01.jpg"></span>
+                      <span class="has-hover-image hide-ball" data-img="images/studio02.jpg"></span>
+                    </h1>
+                    <hr>
+                    <hr>
+                    <div class="one_half">
+                      <img src="images/retoEnfoque.jpg" alt="Descriptive Alt Text" style="width:100%;" loading="lazy">
+                    </div>
+                    <div class="one_half last">
+                      <h5 class="has-mask-fill">El Reto</h5>
+                      <p class="has-animation" data-delay="0">
+                        Trabajamos entre ciudades, gobiernos, desarrolladores comunitarios, inversores y propietarios para crear estructuras que capitalicen la legislación y los códigos de construcción para mejorar las comunidades. Navegar por la identidad dual de la frontera Tijuana-San Diego requiere soluciones arquitectónicas innovadoras que unan las divisiones culturales y económicas. La tarea: diseñar espacios asequibles que armonicen con las narrativas urbanas de la región mientras se promueve la equidad social. En Border Arquitectos, transformamos estos desafíos en oportunidades, asegurando que nuestros proyectos resuenen con la singularidad de esta región fronteriza.
+                      </p>
+                      <hr>
+                      <h5 class="has-mask-fill">El Enfoque</h5>
+                      <p class="has-animation" data-delay="100">
+                        En Border Arquitectos, nuestra metodología comienza con la observación inmersiva y la exploración con tecnología. Integramos el Modelado de Información de Construcción (BIM) en nuestro flujo de trabajo. BIM mejora nuestra capacidad para crear representaciones digitales detalladas de nuestros proyectos, mejorando la coordinación, visualización y simulación desde el diseño hasta la construcción. Este enfoque fomenta una colaboración más estrecha con clientes y socios, asegurando que nuestros diseños cumplan con sus visiones y requisitos, mientras facilitamos la innovación en arquitectura y urbanismo.
+                      </p>
+                    </div>
+                    <div class="one_half">
+                      <div class="button-wrap right">
+                        <div class="icon-wrap parallax-wrap">
+                          <div class="button-icon parallax-element"></div>
+                        </div>
+                        <a class="ajax-link" data-type="page-transition" href="about.html">
+                          <div class="button-text sticky right"></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="one_half last"></div>
+                    <hr>
+                  </div>
+                  <!--/Row -->
+
+                  <section id="loquehacemos">
+                    <div class="content-row row_padding_bottom full light-section" data-bgcolor="#eee">
+                      <div style="position: relative; text-align: center; margin-bottom: 40px;">
+                        <h2 class="section-title" style="font-size: 2.5rem; color: #333; letter-spacing: 1px; text-transform: uppercase; position: relative; display: inline-block; z-index: 1;">
+                          LO QUE HACEMOS
+                        </h2>
+                        <span style="content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 120%; height: 50%; background-color: #f1f1f1; z-index: 0; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);"></span>
+                      </div>
+                      <div id="itemsWrapperLinks">
+                        <div id="itemsWrapper" class="webgl-fitthumbs fx-three">
+                          <!-- Portfolio Wrap -->
+                          <div class="portfolio-wrap flex-grid content-full-width fade-scaleout-effect">
+                            <!-- Portfolio Columns -->
+                            <div class="portfolio">
+                              <!-- Item 1 -->
+                              <div class="item wide trigger-item video" data-color="#000">
+                                <div class="item-parallax">
+                                  <div class="item-appear">
+                                    <div class="item-content">
+                                      <div class="item-wrap-image">
+                                        <img src="images/loQueHacemos/Housing Collective.png" class="item-image grid__item-img" alt="" loading="lazy">
+                                      </div>
+                                      <img class="grid__item-img--large" src="images/loQueHacemos/Housing Collective.png" alt="" loading="lazy">
+                                    </div>
+                                  </div>
+                                  <div class="item-caption-wrapper">
+                                    <div class="item-caption">
+                                      <div class="item-title"><span>Housing Collective</span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Item 2 -->
+                              <div class="item wide trigger-item video" data-color="#000">
+                                <div class="item-parallax">
+                                  <div class="item-appear">
+                                    <div class="item-content">
+                                      <div class="item-wrap-image">
+                                        <img src="images/loQueHacemos/Retail.png" class="item-image grid__item-img" alt="" loading="lazy">
+                                      </div>
+                                      <img class="grid__item-img--large" src="images/loQueHacemos/Retail.png" alt="" loading="lazy">
+                                    </div>
+                                  </div>
+                                  <div class="item-caption-wrapper">
+                                    <div class="item-caption">
+                                      <div class="item-title"><span>Commercial</span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Item 3 -->
+                              <div class="item wide trigger-item video" data-color="#000">
+                                <div class="item-parallax">
+                                  <div class="item-appear">
+                                    <div class="item-content">
+                                      <div class="item-wrap-image">
+                                        <img src="images/loQueHacemos/Business hub.png" class="item-image grid__item-img" alt="" loading="lazy">
+                                      </div>
+                                      <img class="grid__item-img--large" src="images/loQueHacemos/Business hub.png" alt="" loading="lazy">
+                                    </div>
+                                  </div>
+                                  <div class="item-caption-wrapper">
+                                    <div class="item-caption">
+                                      <div class="item-title"><span>Business</span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Item 4 -->
+                              <div class="item wide trigger-item video" data-color="#000">
+                                <div class="item-parallax">
+                                  <div class="item-appear">
+                                    <div class="item-content">
+                                      <div class="item-wrap-image">
+                                        <img src="images/loQueHacemos/Public Space.png" class="item-image grid__item-img" alt="" loading="lazy">
+                                      </div>
+                                      <img class="grid__item-img--large" src="images/loQueHacemos/Public Space.png" alt="" loading="lazy">
+                                    </div>
+                                  </div>
+                                  <div class="item-caption-wrapper">
+                                    <div class="item-caption">
+                                      <div class="item-title"><span>Urbanism</span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Item 5 -->
+                              <div class="item wide trigger-item video" data-color="#000">
+                                <div class="item-parallax">
+                                  <div class="item-appear">
+                                    <div class="item-content">
+                                      <div class="item-wrap-image">
+                                        <img src="images/loQueHacemos/Hospitality.png" class="item-image grid__item-img" alt="" loading="lazy">
+                                      </div>
+                                      <img class="grid__item-img--large" src="/images/loQueHacemos/Hospitality.png" alt="" loading="lazy">
+                                    </div>
+                                  </div>
+                                  <div class="item-caption-wrapper">
+                                    <div class="item-caption">
+                                      <div class="item-title"><span>Hospitality</span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Item 6 -->
+                              <div class="item wide trigger-item video" data-color="#000">
+                                <div class="item-parallax">
+                                  <div class="item-appear">
+                                    <div class="item-content">
+                                      <div class="item-wrap-image">
+                                        <img src="images/loQueHacemos/Residencial.png" class="item-image grid__item-img" alt="" loading="lazy">
+                                      </div>
+                                      <img class="grid__item-img--large" src="images/loQueHacemos/Residencial.png" alt="" loading="lazy">
+                                    </div>
+                                  </div>
+                                  <div class="item-caption-wrapper">
+                                    <div class="item-caption">
+                                      <div class="item-title"><span>Residential</span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Item 7 -->
+                              <div class="item wide trigger-item video" data-color="#000">
+                                <div class="item-parallax">
+                                  <div class="item-appear">
+                                    <div class="item-content">
+                                      <div class="item-wrap-image">
+                                        <img src="images/loQueHacemos/Medical.png" class="item-image grid__item-img" alt="" loading="lazy">
+                                      </div>
+                                      <img class="grid__item-img--large" src="images/loQueHacemos/Medical.png" alt="" loading="lazy">
+                                    </div>
+                                  </div>
+                                  <div class="item-caption-wrapper">
+                                    <div class="item-caption">
+                                      <div class="item-title"><span>Medical</span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--/Portfolio -->
+                            </div>
+                            <!--/Portfolio Wrap -->
+                          </div>
+                        </div>
+                    </div> 
+                  </section>
+                  
+                  <section  style="padding: 50px 0;">
+                    <div style="position: relative; text-align: center; margin-bottom: 30px;">
+                      <h2 style="font-size: 2.5rem; color: #333; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; position: relative; display: inline-block; z-index: 1;">
+                        Certificaciones y Acreditaciones
+                      </h2>
+                      <span style="content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 120%; height: 50%; background-color: #f1f1f1; z-index: 0; box-shadow: 0px 4px 6px rgba(166, 47, 129, 0.1);"></span>
+                    </div>
+                    <div style="width: 250%; overflow: hidden; position: relative;">
+                      <div id="slider" style="display: flex; width: 200%; gap: 25px; justify-content: center;">
+                        <!-- First set of images with text underneath -->
+                        <div style="text-align: center;">
+                          <img src="images/suzmtac-black.png" alt="Image 1" style="width: 300%; height: auto;" loading="lazy">
+                        </div>
+                        <div style="text-align: center;">
+                          <img src="images/urbanland.png" alt="Image 1" style="width: 300%; height: auto;" loading="lazy">
+                        </div>
+                        <div style="text-align: center;">
+                          <img src="images/ncarb-black.png" alt="Image 1" style="width: 300%; height: auto;" loading="lazy">
+                        </div>
+                        <div style="text-align: center;">
+                          <img src="images/aia.png" alt="Image 1" style="width: 300%; height: auto;" loading="lazy">
+                        </div>
+                        <div style="text-align: center;">
+                          <img src="images/colegio.png" alt="Image 1" style="width: 300%; height: auto;" loading="lazy">
+                        </div>
+                        <!-- Duplicate the set for seamless looping -->
+                        <div style="text-align: center;">
+                          <img src="images/suzmtac-black.png" alt="Image 1" style="width: 300%; height: auto;" loading="lazy">
+                        </div>
+                        <div style="text-align: center;">
+                          <img src="images/urbanland.png" alt="Image 1" style="width: 300%; height: auto;" loading="lazy">
+                        </div>
+                        <div style="text-align: center;">
+                          <img src="images/ncarb-black.png" alt="Image 1" style="width: 300%; height: auto;" loading="lazy">
+                        </div>
+                        <div style="text-align: center;">
+                          <img src="images/aia.png" alt="Image 1" style="width: 300%; height: auto;" loading="lazy">
+                        </div>
+                        <div style="text-align: center;">
+                          <img src="images/colegio.png" alt="Image 1" style="width: 300%; height: auto;" loading="lazy">
+                        </div>
+                      </div>
+                    </div>
+                    <script>
+                      const slider = document.getElementById('slider');
+                      let startPosition = 0;
+                      const sliderSpeed = 2; // Adjust slider speed as needed
+
+                      function animateSlider() {
+                        startPosition -= sliderSpeed;
+                        if (Math.abs(startPosition) >= slider.offsetWidth / 2) {
+                          startPosition = 0; // Reset for seamless loop
+                        }
+                        slider.style.transform = `translateX(${startPosition}px)`;
+                        requestAnimationFrame(animateSlider);
+                      }
+                      animateSlider();
+                    </script>
+                  </section>
+                  
+                  <section id="awards-section" style="padding: 20px;">
+                    <div id="awards-container" style="display: flex; justify-content: center;">
+                      <table style="width: 80%; border-collapse: collapse; text-align: left; border: 1px solid #ccc;">
+                        <thead>
+                          <tr>
+                            <th style="border-bottom: 1px solid #863838; padding: 8px; font-weight: normal;">Year</th>
+                            <th style="border-bottom: 1px solid #ccc; padding: 8px; font-weight: normal;">Award</th>
+                            <th style="border-bottom: 1px solid #ccc; padding: 8px; font-weight: normal;">Description</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="padding: 8px; border-bottom: 1px solid #eee;">2020</td>
+                            <td style="padding: 8px; border-bottom: 1px solid #eee;">AIA Design Awards San Diego - Tijuana</td>
+                            <td style="padding: 8px; border-bottom: 1px solid #eee;">Business Center - Coworking Space.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+                  
+                  <!-- Note: There are two sections with id="servicios". Consider using unique IDs if conflicts arise. -->
+                  <section id="servicios" style="padding: 100px 0;">
+                    <div style="text-align: center; margin-bottom: 30px;">
+                      <div style="position: relative; text-align: center; margin-bottom: 40px;">
+                        <h2 style="font-size: 2.5rem; color: #333; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; position: relative; display: inline-block; z-index: 1;">
+                          Servicios
+                        </h2>
+                        <span style="content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 120%; height: 50%; background-color: #f1f1f1; z-index: 0; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);"></span>
+                      </div>
+                    </div>
+                    <div style="width: 100%; display: flex; flex-wrap: wrap; gap: 25px; justify-content: center;">
+                      <div style="text-align: center; width: 30%;">
+                        <img src="images/analisis.png" alt="Análisis financieros" style="width: 100px;" loading="lazy">
+                        <p> Análisis financieros para <br> desarrollo de proyectos <br> de inversión </p>
+                      </div>
+                      <div style="text-align: center; width: 30%;">
+                        <img src="images/IDEAS.png" alt="Desarrollo de Proyectos" style="width: 100px;" loading="lazy">
+                        <p> Desarrollo de Proyectos Conceptuales y viabilidades </p>
+                      </div>
+                      <div style="text-align: center; width: 30%;">
+                        <img src="images/desarrollo.png" alt="Desarrollo de documentos" style="width: 100px;" loading="lazy">
+                        <p> Desarrollo de documentos de construcción </p>
+                      </div>
+                      <div style="text-align: center; width: 30%;">
+                        <img src="images/permisos.png" alt="Permisos para construcción" style="width: 100px;" loading="lazy">
+                        <p> Estudios, gestión y permisos para construcción </p>
+                      </div>
+                      <div style="text-align: center; width: 30%;">
+                        <img src="images/calendar.png" alt="Programación y planificación" style="width: 100px;" loading="lazy">
+                        <p> Programación y planificación de proyectos </p>
+                      </div>
+                      <div style="text-align: center; width: 30%;">
+                        <img src="images/finanzas.png" alt="Control de construcción" style="width: 100px;" loading="lazy">
+                        <p> Control y administración de construcción </p>
+                      </div>
+                      <div style="text-align: center; width: 30%;">
+                        <img src="images/ejecucion.png" alt="Supervisión de obra" style="width: 100px;" loading="lazy">
+                        <p> Supervisión y ejecución de obra terminada </p>
+                      </div>
+                    </div>
+                  </section>
+                  
+                  <section id="equipo">
+                    <div style="position: relative; text-align: center; margin-bottom: 40px;">
+                      <h2 style="font-size: 2.5rem; color: #333; margin-bottom: 40px; letter-spacing: 1px; text-transform: uppercase; position: relative; display: inline-block; z-index: 1;">
+                        equipo
+                      </h2>
+                      <span style="content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 120%; height: 50%; background-color: #f1f1f1; z-index: 0; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);"></span>
+                    </div>
+                    <div id="team-container" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; width: 100%;">
+                      <!-- Alberto Montemayor -->
+                      <div class="team-member" style="text-align: center; flex: 1 1 25%; max-width: 25%; min-height: 600px; position: relative; overflow: hidden;">
+                        <div class="team-image-wrapper" style="width: 100%; height: 400px; position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 15px;">
+                          <img src="images/teamMembers/alberto.png" alt="Alberto Montemayor" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;" loading="lazy">
+                          <div class="team-hover-bio" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(10px);">
+                            <p style="color: #ffffff; font-size: 3vw; font-weight: bold; text-align: center;">Alberto Montemayor <br> Arquitecto líder con 15 años de experiencia en diseño de proyectos residenciales y comerciales.</p>
+                          </div>
+                        </div>
+                        <div class="team-info" style="padding: 0 10px; max-width: 100%;">
+                          <h3 style="margin: 5px 0; font-size: 2vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Alberto Montemayor</h3>
+                          <p style="margin: 0; font-size: 1.5vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #666;">Lead Architect</p>
+                        </div>
+                      </div>
+                      <!-- Christian Galicia -->
+                      <div class="team-member" style="text-align: center; flex: 1 1 25%; max-width: 25%; min-height: 600px; position: relative; overflow: hidden;">
+                        <div class="team-image-wrapper" style="width: 100%; height: 400px; position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 15px;">
+                          <img src="images/teamMembers/christianGalicia.png" alt="Christian Galicia" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;" loading="lazy">
+                          <div class="team-hover-bio" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(10px);">
+                            <p style="color: #ffffff; font-size: 3vw; font-weight: bold; text-align: center;">Christian Galicia <br> Especialista en arquitectura sostenible y eficiente con enfoque en energías renovables.</p>
+                          </div>
+                        </div>
+                        <div class="team-info" style="padding: 0 10px; max-width: 100%;">
+                          <h3 style="margin: 5px 0; font-size: 2vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Christian Galicia</h3>
+                          <p style="margin: 0; font-size: 1.5vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #666;">Lead Architect</p>
+                        </div>
+                      </div>
+                      <!-- Felix Hernandez -->
+                      <div class="team-member" style="text-align: center; flex: 1 1 25%; max-width: 25%; min-height: 600px; position: relative; overflow: hidden;">
+                        <div class="team-image-wrapper" style="width: 100%; height: 400px; position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 15px;">
+                          <img src="images/teamMembers/felix.png" alt="Felix Hernandez" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;" loading="lazy">
+                          <div class="team-hover-bio" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(10px);">
+                            <p style="color: #ffffff; font-size: 3vw; font-weight: bold; text-align: center;">Felix Hernandez <br> Diseñador de interiores con más de 10 años de experiencia en remodelación y diseño de espacios modernos.</p>
+                          </div>
+                        </div>
+                        <div class="team-info" style="padding: 0 10px; max-width: 100%;">
+                          <h3 style="margin: 5px 0; font-size: 2vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Felix Hernandez</h3>
+                          <p style="margin: 0; font-size: 1.5vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #666;">Architect Designer</p>
+                        </div>
+                      </div>
+                      <!-- Hernaldo Andrade -->
+                      <div class="team-member" style="text-align: center; flex: 1 1 25%; max-width: 25%; min-height: 600px; position: relative; overflow: hidden;">
+                        <div class="team-image-wrapper" style="width: 100%; height: 400px; position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 15px;">
+                          <img src="images/teamMembers/hernaldo.png" alt="Hernaldo Andrade" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;" loading="lazy">
+                          <div class="team-hover-bio" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(10px);">
+                            <p style="color: #ffffff; font-size: 3vw; font-weight: bold; text-align: center;">Hernaldo Andrade <br> Consultor de arquitectura con MBA y amplia experiencia en gestión de proyectos y negocios.</p>
+                          </div>
+                        </div>
+                        <div class="team-info" style="padding: 0 10px; max-width: 100%;">
+                          <h3 style="margin: 5px 0; font-size: 2vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Hernaldo Andrade</h3>
+                          <p style="margin: 0; font-size: 1.5vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #666;">Architect - MBA Consultant</p>
+                        </div>
+                      </div>
+                      <!-- Fernando Escalante -->
+                      <div class="team-member" style="text-align: center; flex: 1 1 25%; max-width: 25%; min-height: 600px; position: relative; overflow: hidden;">
+                        <div class="team-image-wrapper" style="width: 100%; height: 400px; position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 15px;">
+                          <img src="images/teamMembers/fer.png" alt="Fernando Escalante" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;" loading="lazy">
+                          <div class="team-hover-bio" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(10px);">
+                            <p style="color: #ffffff; font-size: 3vw; font-weight: bold; text-align: center;">Fernando Escalante <br> Webmaster con pasión por la tecnología, desarrollo de sitios web y comercio electrónico.</p>
+                          </div>
+                        </div>
+                        <div class="team-info" style="padding: 0 10px; max-width: 100%;">
+                          <h3 style="margin: 5px 0; font-size: 2vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Fernando Escalante</h3>
+                          <p style="margin: 0; font-size: 1.5vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #666;">Webmaster</p>
+                        </div>
+                      </div>
+                      <!-- Angel Mendivil -->
+                      <div class="team-member" style="text-align: center; flex: 1 1 25%; max-width: 25%; min-height: 600px; position: relative; overflow: hidden;">
+                        <div class="team-image-wrapper" style="width: 100%; height: 400px; position: relative; border-radius: 8px; overflow: hidden; margin-bottom: 15px;">
+                          <img src="images/teamMembers/diseñador.png" alt="Angel Mendivil" style="width: 100%; height: 100%; object-fit: cover; transition: filter 0.3s ease;" loading="lazy">
+                          <div class="team-hover-bio" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.1); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; backdrop-filter: blur(10px);">
+                            <p style="color: #ffffff; font-size: 3vw; font-weight: bold; text-align: center;">Angel Mendivil <br> Diseñador gráfico y community manager con experiencia en campañas digitales y branding.</p>
+                          </div>
+                        </div>
+                        <div class="team-info" style="padding: 0 10px; max-width: 100%;">
+                          <h3 style="margin: 5px 0; font-size: 2vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Angel Mendivil</h3>
+                          <p style="margin: 0; font-size: 1.5vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #666;">Graphic designer <br> Community manager</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: center;">
+                      <h4>Además de los miembros actuales de nuestro equipo, estamos agradecidos con nuestros colaboradores anteriores que ayudaron a hacer realidad nuestros proyectos—y nuestra oficina.</h4>
+                      <ul style="list-style-type: none; padding: 0; display: inline-block; text-align: left;">
+                        <li>Eva Ramirez</li>
+                        <li>Alberto Ortiz</li>
+                        <li>Daniela Cordero</li>
+                        <li>Jorge Arias</li>
+                      </ul>
+                    </div>
+                  </section>
+                  
+                  <script>
+                    // Add hover effect for all team members
+                    document.querySelectorAll('.team-member').forEach(member => {
+                      const img = member.querySelector('img');
+                      const bio = member.querySelector('.team-hover-bio');
+                      
+                      member.addEventListener('mouseover', () => {
+                        img.style.filter = 'blur(5px)';
+                        bio.style.opacity = '1';
+                      });
+                      
+                      member.addEventListener('mouseout', () => {
+                        img.style.filter = 'blur(0)';
+                        bio.style.opacity = '0';
+                      });
+                    });
+                  </script>
+
+                  <!-- Responsive styling -->
+                  <style>
+                    @media screen and (max-width: 1024px) {
+                      #new-team-container .team-member {
+                        flex: 1 1 45%;
+                      }
+                    }
+                    @media screen and (max-width: 767px) {
+                      #new-team-container {
+                        flex-direction: column;
+                        padding: 0 20px;
+                      }
+                      #new-team-container .team-member {
+                        flex: 1 1 100%;
+                        margin-bottom: 20px;
+                      }
+                    }
+                  </style>
+
+                  <section id="contact">
+                    <div style="position: relative; text-align: center; margin-bottom: 30px;">
+                      <p style="font-size: 1.5rem; color: #666; margin: 0 0 20px;">
+                        Nos encantaría saber de ti. <br> Trabajemos juntos.
+                      </p>
+                      <h2 style="font-size: 2.5rem; color: #333; margin-bottom: 20px; letter-spacing: 1px; text-transform: uppercase; position: relative; display: inline-block; z-index: 1;">
+                        Contáctanos
+                      </h2>
+                    </div>
+                    <div class="two_third last">
+                      <!-- Contact Formular -->
+                      <div id="contact-formular" style="padding-left: 100px; padding-right: 100px;">
+                        <div id="message"></div>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                          <!-- Replace with your Access Key -->
+                          <input type="hidden" name="access_key" value="ffa5bb9c-e3b2-4392-8d80-a1a65a9b46a8">
+                          <!-- Form Inputs. Each input must have a name="" attribute -->
+                          <input type="text" name="name" placeholder="¿Cuál es tu nombre?" required>
+                          <input type="email" name="email" placeholder="Tu e-mail" required>
+                          <textarea name="message" placeholder="Hablanos sobre tu idea" required></textarea>
+                          <!-- Honeypot Spam Protection -->
+                          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                          <!-- Custom Confirmation / Success Page -->
+                          <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                          <button type="submit">Enviar mensaje</button>
+                        </form>
+                      </div>
+                      <!--/Contact Formular -->
+                    </div>
+                  </section>
+                </div>
+                <!--/Main Content -->
+              </div>
+              <!--/Main -->
               
-              
-                <!-- Menu Burger -->
-                <div class="button-wrap right menu burger-lines">
+              <!-- Footer -->
+              <footer class="hidden">        		
+                <div id="footer-container">
+                  <div id="backtotop" class="button-wrap left">
                     <div class="icon-wrap parallax-wrap">
-                        <div class="button-icon parallax-element">
-                            <div id="burger-wrapper">
-                                <div id="menu-burger">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
+                      <div class="button-icon parallax-element">
+                        <i class="arrow-icon-up"></i>
+                      </div>
                     </div>
-                    <div class="button-text sticky right"><span data-hover="Menu">Menu</span></div> 
+                    <div class="button-text sticky left"><span data-hover="Volver Arriba">Volver Arriba</span></div> 
+                  </div>
+                  <div class="footer-middle">
+                    <div class="copyright"><a class="link" target="_blank" href="https://www.timeless-digital.com">Timeless Digital</a> © 2024</div>
+                  </div>
+                  <div class="socials-wrap">            	
+                    <div class="socials-icon"><i class="fa-solid fa-share-nodes"></i></div>
+                    <div class="socials-text">Síguenos</div>
+                    <ul class="socials">
+                      <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/timelessdigitalwebdesign" target="_blank">Fb</a></span></li>
+                      <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/timeless.digital/">In</a></span></li>
+                    </ul>                
+                  </div>
                 </div>
-                <!--/Menu Burger -->
-            
-                </div>
-            </header>
-            <!--/Header -->        
-            
-            
-             
-            
-            
-            <!-- Content Scroll -->
-            <div id="content-scroll">
-            
-            
-                <!-- Main -->
-                <div id="main">
-                
-                    <!-- Hero Section -->
-                    <div id="hero" class="has-image">
-                        <div id="hero-styles">
-                            <div id="hero-caption" class="content-full-width parallax-scroll-caption">
-                                <div class="inner">
-                                    <div class="hero-title-wrapper"><h1 class="hero-title"><p></p><span>Cabaña</span><span>Condor</span></h1></div>                                    
-                                </div>
-                            </div>
-                            <div id="hero-footer">
-                            	<div class="hero-footer-left">
-                                	<div class="button-wrap right scroll-down">
-                                        <div class="icon-wrap parallax-wrap">
-                                            <div class="button-icon parallax-element">
-                                                <i class="arrow-icon-down"></i>
-                                            </div>
-                                        </div>
-                                        <div class="button-text sticky right"><span data-hover="Scroll to Explore">Scroll to Explore</span></div> 
-                                    </div>
-                                </div>
-                                <div class="hero-footer-right">
-                    				<div id="share" class="page-action-content" data-text="Share:"></div>
-                                </div>
-                            </div>                                    
-                        </div>
-                    </div>
-                    <div id="hero-image-wrapper" class="change-header-color">
-                    	<div id="hero-background-layer" class="parallax-scroll-image">
-                            <div id="hero-bg-image" style="background-image:url(images/Cabaคa\ Border\ -2.jpg)"></div>
-                        </div>
-                    </div>                        
-                    <!--/Hero Section -->   
-                         
-                    
-                    <!-- Main Content -->
-                    <div id="main-content">
-                        <div id="main-page-content">
-                        
-                        
-                            <!-- Row -->
-                            <div class="content-row row_padding_top row_padding_left row_padding_right row_padding_bottom full light-section" data-bgcolor="#eee">
-                                
-                                <div class="pinned-section">
-                                    <div class="pinned-element left">
-                                        
-                                        <h5>Overview</h5>
-                                        
-                                        <h6>
-                                            -Año de diseño, locacion<br>
-                                            -Estilo<br>
-                                            -Tiempo de obra<br>
-                                            -Materiales, tecnicas , tecnologia usadas<br>
-                                            -Lead Architech<br>
-                                        </h6>
-                                        <div class="button-box has-animation" data-delay="100">             
-                                            <div class="clapat-button-wrap parallax-wrap hide-ball">
-                                                <div class="clapat-button parallax-element">
-                                                    <div class="button-border rounded parallax-element-second">
-                                                        <a target="_blank" href="https://themeforest.net/user/clapat/portfolio">
-                                                            <span data-hover="VISIT LINK">VISIT LINK</span>
-                                                         </a>
-                                                    </div>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <div class="scrolling-element right">
-                                        
-                                        <h4 class="has-mask">There are many variations of passages of Lorem Ipsum but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </h4>
-                                        <hr>
-                                        <p class="has-animation" data-delay="0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
-                                        <p class="has-animation" data-delay="100">You need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary with Latin words.</p>
-                                        
-                                    </div>
-                                </div>
-                                
-                            </div> 
-                            <!--/Row -->
-                            
-                            
-                            <!-- Row -->
-                            <div class="content-row row_padding_left row_padding_right row_padding_bottom full light-section" data-bgcolor="#eee">
-                            
-                                <div class="one_third">
-                                	<figure class="has-animation has-cover" data-delay="0">
-                                        <a href="images/projects/Cabaคas/Cabaคa Condor/Cabaคa Border -28.jpg" class="image-link"><img src="images/projects/Cabaคas/Cabaคa Condor/cabaña4.png" alt="Image Title"></a>               
-                                        <figcaption>Image Caption Here</figcaption>
-                                    </figure>
-                                </div>
-                                
-                                <div class="one_third">
-                                	<figure class="has-animation has-cover" data-delay="0">
-                                        <a href="images/projects/london02.jpg" class="image-link"><img src="images/projects/Cabaคas/Cabaคa Condor/Cabaña3.png" alt="Image Title"></a>               
-                                        <figcaption>Image Caption Here</figcaption>
-                                    </figure>
-                                </div>
-                                
-                                <div class="one_third last">
-                                	<figure class="has-animation has-cover" data-delay="100">
-                                        <a href="images/projects/london03.jpg" class="image-link"><img src="images/projects/Cabaคas/Cabaคa Condor/Cabaña2.png" alt="Image Title"></a>               
-                                        <figcaption>Image Caption Here</figcaption>
-                                    </figure>
-                                </div>
-                                    
-                            </div> 
-                            <!--/Row -->
-                            
-                            
-                            <!-- Row -->
-                            <div class="content-row row_padding_left row_padding_right row_padding_bottom full light-section" data-bgcolor="#eee">
-                                
-                                <div class="one_half"></div>
-                                
-                                <div class="one_half last">
-                                    
-                                    <h6 class="has-mask">/ Inspiring with design</h6>
-                                    <hr>
-                                    <h4 class="has-mask">We help businesses to innovate and remain highly relevant to their customers by developing cutting-edge digital products and executing smart and valuable communication</h4>
-                                </div>
-                            
-                            </div> 
-                            <!--/Row -->
-                            
-                            
-                            <!-- Row -->
-                            <div class="content-row light-section" data-bgcolor="#eee">
-                            	
-                                <div class="swiper-container content-looped-carousel autocenter light-cursor">
-        							<div class="swiper-wrapper">
-            							<div class="swiper-slide"><div class="slide-img"><img src="images/condorSlider1.png" alt="Image Title"></div></div>
-                                        <div class="swiper-slide"><div class="slide-img"><img src="images/condorslider2.png" alt="Image Title"></div></div>
-                                        <div class="swiper-slide"><div class="slide-img"><img src="images/condorslider3.png" alt="Image Title"></div></div>
-                                    </div>
-                                    <div class="slider-button-next"></div>
-    								<div class="slider-button-prev"></div>
-                                    <div class="swiper-pagination"></div> 
-                                </div>
-                                    
-                            </div> 
-                            <!--/Row -->
-                        
-                        
-                        </div>
-                        <!--/Main Page Content --> 
-                        
-                        
-                        
-                        <!-- Project Navigation --> 
-                        <div id="project-nav" class="" data-bgcolor="#000">
-                            <div class="next-project-wrap">
-                                <div class="next-project-caption content-full-width">
-                                    <div class="next-caption-wrapper">
-                                    	<div class="caption-wrapper">
-                                            <a class="next-ajax-link-project auto-trigger" data-type="page-transition" href="project02.html" data-color="#963a8d" data-firstline="Next" data-secondline="Project"></a>
-                                            <div class="next-caption">                                         
-                                                <div class="next-hero-subtitle-wrapper"><div class="next-hero-subtitle"><span>NEXT PROJECT</span></div></div>
-                                                <div class="next-hero-progress"><span></span></div>                                                                                            
-                                                <div class="next-hero-title-wrapper"><div class="next-hero-title"><span>Valle</span> <span>De Guadalupe</span></div></div>
-                                            </div>
-                                        </div>                                        
-                                    </div>                   
-                                </div>
-                                <div class="next-project-image-wrapper">
-                                    <div class="next-project-image">
-                                        <div class="next-project-image-bg" style="background-image:url(images/Cabaคa\ Valle\ Gp_Exterior\ 10.jpg)"></div>
-                                    </div>            
-                                </div>
-                            </div>
-                        </div>      
-                        <!--/Project Navigation -->                                                
-                                
-                    </div>
-                    <!--/Main Content --> 
-                </div>
-                <!--/Main --> 
-                
-                
-                <!-- Footer -->
-                <footer class="hidden">        	
-                    <div id="footer-container">
-                        
-                        <div id="backtotop" class="button-wrap left">
-                            <div class="icon-wrap parallax-wrap">
-                                <div class="button-icon parallax-element">
-                                    <i class="arrow-icon-up"></i>
-                                </div>
-                            </div>
-                            <div class="button-text sticky left"><span data-hover="Back Top">Back Top</span></div> 
-                        </div>
-                        
-                        <div class="footer-middle">
-                            <div class="copyright"><a class="link" target="_blank" href="https://www.clapat.com/">ClaPat Themes</a> © 2022</div>
-                        </div>
-                        
-                        <div class="socials-wrap">            	
-                            <div class="socials-icon"><i class="fa-solid fa-share-nodes"></i></div>
-                            <div class="socials-text">Follow Us</div>
-                            <ul class="socials">
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.dribbble.com/clapat" target="_blank">Db</a></span></li>
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.twitter.com/clapatdesign" target="_blank">Tw</a></span></li>
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.behance.com/clapat" target="_blank">Be</a></span></li>
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.facebook.com/clapat.ro" target="_blank">Fb</a></span></li>
-                                <li><span class="parallax-wrap"><a class="parallax-element" href="https://www.instagram.com/clapat.themes/">In</a></span></li>
-                            </ul>                
-                        </div>
-                        
-                    </div>
-                </footer>
-                <!--/Footer -->
-            
-        
-        	</div>
+              </footer>
+              <!--/Footer -->
+            </div>
             <!--/Content Scroll -->
-            
+
+            <div class="thumb-wrapper">
+              <div class="thumb-container">
+                <div class="thumb-page" data-src="images/01hero.jpg"></div>
+                <div class="thumb-page" data-src="images/03hero.jpg"></div>
+                <div class="thumb-page" data-src="images/04hero.jpg"></div>
+                <div class="thumb-page" data-src="images/05hero.jpg"></div>
+              </div>
+            </div>
+
             <div id="app"></div>
-            
-		</div>    
-        <!--/Page Content -->
-    
-		</div>
-	</main>
-    
-    
-    
-   <div class="cd-cover-layer"></div>
-    <div id="magic-cursor">
-        <div id="ball">
-        	<div id="ball-drag-x"></div>
-            <div id="ball-drag-y"></div>
-        	<div id="ball-loader"></div>
+          </div>
+          <!--/Page Content -->
         </div>
-    </div>
-    <div id="clone-image">
-    	<div class="hero-translate"></div>
-    </div>
-    <div id="rotate-device"></div>
-    
-    
-		
-    <script src="js/jquery.min.js"></script>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" ></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js'></script>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js'></script>
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false"></script>
-	<script src="js/clapatwebgl.js"></script>
-	<script src="js/plugins.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/scripts.js"></script>
+      </main>
 
+      <div class="cd-cover-layer"></div>
+      <div id="magic-cursor">
+        <div id="ball">
+          <div id="ball-drag-x"></div>
+          <div id="ball-drag-y"></div>
+          <div id="ball-loader"></div>
+        </div>
+      </div>
+      <div id="clone-image">
+        <div class="hero-translate"></div>
+      </div>
+      <div id="rotate-device"></div>
 
-
-</body>
-
+      <!-- Defer non-critical scripts -->
+      <script src="js/jquery.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Draggable.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/EasePack.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js" defer></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpK1sWi3J3EbUOkF_K4-UHzi285HyFX5M&sensor=false" defer></script>
+      <script src="js/clapatwebgl.js" defer></script>
+      <script src="js/plugins.js" defer></script>
+      <script src="js/common.js" defer></script>
+      <script src="js/contact.js" defer></script>
+      <script src="js/scripts.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+      <script>
+        AOS.init();
+      </script>
+      
+      <style>
+        .wrapper {
+          background-color: #fff;
+          color: #000;
+          font-family: 'Arial', sans-serif;
+          padding: 20px;
+          max-width: 600px;
+          margin: auto;
+        }
+        h4 {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          margin: 10px 0;
+          box-sizing: border-box;
+          border: 1px solid #000;
+          border-radius: 5px;
+        }
+        button,
+        input[type="reset"] {
+          background-color: #000;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+        button:hover,
+        input[type="reset"]:hover {
+          background-color: #333;
+        }
+      </style>
+    </body>
 </html>
